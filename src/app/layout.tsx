@@ -14,7 +14,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <header className="text-red-500">ヘッター</header>
+          {children}
+        <footer>フッター</footer>
+        </body>
     </html>
   );
 }
