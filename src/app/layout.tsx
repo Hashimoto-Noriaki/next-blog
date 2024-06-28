@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from "./Header";
 
 
 export const metadata: Metadata = {
@@ -14,8 +15,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <header className="text-red-500">ヘッター</header>
+      <body className="container mx-auto bg-slate-700 text-slate-300">
+        <Header/>
           {children}
         <footer>フッター</footer>
         </body>
